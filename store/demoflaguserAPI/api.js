@@ -14,6 +14,15 @@ function api_v1_login_create(payload) {
 function api_v1_signup_create(payload) {
   return demoflaguserAPI.post(`/api/v1/signup/`, payload.data)
 }
+function modules_flag_user_content_choice_list_retrieve(payload) {
+  return demoflaguserAPI.get(`/modules/flag-user-content/choice-list/`)
+}
+function modules_flag_user_content_create_report_create(payload) {
+  return demoflaguserAPI.post(`/modules/flag-user-content/create-report/`)
+}
+function modules_flag_user_content_reported_list_retrieve(payload) {
+  return demoflaguserAPI.get(`/modules/flag-user-content/reported-list/`)
+}
 function rest_auth_login_create(payload) {
   return demoflaguserAPI.post(`/rest-auth/login/`, payload.data)
 }
@@ -57,6 +66,9 @@ export const apiService = {
   api_docs_schema_retrieve,
   api_v1_login_create,
   api_v1_signup_create,
+  modules_flag_user_content_choice_list_retrieve,
+  modules_flag_user_content_create_report_create,
+  modules_flag_user_content_reported_list_retrieve,
   rest_auth_login_create,
   rest_auth_logout_retrieve,
   rest_auth_logout_create,
