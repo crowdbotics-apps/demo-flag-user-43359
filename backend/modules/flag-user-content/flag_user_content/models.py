@@ -16,7 +16,8 @@ class Choices(models.Model):
     MISLEADING = 7
     COPYRIGHT = 8
     DESTRUCTIVE = 9
-    OTHER = 10
+    BlOCK_USER = 10
+    OTHER = 11
 
     REPORT_CHOICES = (
         (UNSOLICITED, 'Unsolicited commercial content'),
@@ -28,6 +29,7 @@ class Choices(models.Model):
         (MISLEADING, 'Misleading information'),
         (COPYRIGHT, 'Violation of copyright and trademark rights'),
         (DESTRUCTIVE, 'Self-destructive actions'),
+        (BlOCK_USER, 'Block User'),
         (OTHER, 'Others')
     )
 
